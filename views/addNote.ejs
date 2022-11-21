@@ -1,0 +1,28 @@
+<%-include("./partials/headers.ejs")    %>
+<section id="addNote">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="my-3">
+                    <h2 class="text-center">Add Note here</h2>
+                </div>
+                <form action="/addnote" method="post">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" name="title" placeholder="write your note here">
+                        <label for="floatingInput">Title</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" name="desc" placeholder="Leave a descriptions here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Descriptions</label>
+                    </div>
+                    <div class="my-3">
+                        <button type="submit" class="btn btn-primary form-control">Add Note</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+<%-include("./partials/footer.ejs")    %>
